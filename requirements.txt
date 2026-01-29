@@ -1,4 +1,6 @@
-openai
+openai>=1.0.0
+pydantic          # For strict data typing
 python-dotenv
 pandas
-requests
+pisa              # For converting HTML reports to PDF
+loguru            # For professional color-coded logging
