@@ -1,0 +1,36 @@
+# --- Security (CRITICAL) ---
+.env
+.env.local
+secrets.json
+api_keys.txt
+
+# --- Python Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+build/
+dist/
+*.egg-info/
+
+# --- Agency Specifics ---
+data/*.csv
+data/*.json
+reports/*.pdf
+reports/*.html
+# Keep the folders but ignore the generated files inside
+!data/.gitkeep
+!reports/.gitkeep
+
+# --- IDE Settings ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- System Files ---
+Thumbs.db
+Desktop.ini
+.DS_Store
