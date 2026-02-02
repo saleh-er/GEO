@@ -178,3 +178,158 @@ visibility_score
 recommendations
   Field required [type=missing, input_value={'company': 'Tesla', 'ind...ding SUVs and trucks'}]}, input_type=dict]
     For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:19:50.408 | INFO     | __main__:run_bulk_audits:23 - Loaded 3 clients. Starting bulk processing...
+2026-02-02 17:19:50.763 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Perplexity AI
+2026-02-02 17:19:51.919 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Perplexity AI: 2 validation errors for AuditReport
+visibility_score
+  Field required [type=missing, input_value={'brand_name': 'Perplexit...sed in San Francisco'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'brand_name': 'Perplexit...sed in San Francisco'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:19:51.919 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: SpaceX
+2026-02-02 17:19:52.621 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit SpaceX: 2 validation errors for AuditReport
+visibility_score
+  Field required [type=missing, input_value={'brand_name': 'SpaceX', ...able rocket landings'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'brand_name': 'SpaceX', ...able rocket landings'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:19:52.621 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Tesla
+2026-02-02 17:19:53.469 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Tesla: 2 validation errors for AuditReport
+visibility_score
+  Field required [type=missing, input_value={'brand_name': 'Tesla', '...el and configuration'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'brand_name': 'Tesla', '...el and configuration'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:20:25.315 | INFO     | __main__:run_bulk_audits:23 - Loaded 3 clients. Starting bulk processing...
+2026-02-02 17:20:25.617 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Perplexity AI
+2026-02-02 17:20:27.156 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Perplexity AI: 3 validation errors for AuditReport
+visibility_score
+  Field required [type=missing, input_value={'brand_name': 'Perplexit...c papers, and more.'}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+citations
+  Field required [type=missing, input_value={'brand_name': 'Perplexit...c papers, and more.'}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'brand_name': 'Perplexit...c papers, and more.'}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:20:27.157 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: SpaceX
+2026-02-02 17:20:28.379 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit SpaceX: 2 validation errors for AuditReport
+visibility_score
+  Field required [type=missing, input_value={'brand_name': 'SpaceX', ...sable rocket flights'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'brand_name': 'SpaceX', ...sable rocket flights'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:20:28.379 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Tesla
+2026-02-02 17:20:29.035 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Tesla: 3 validation errors for AuditReport
+visibility_score
+  Field required [type=missing, input_value={'brand_name': 'Tesla', '...ing SUVs and trucks'}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+citations
+  Field required [type=missing, input_value={'brand_name': 'Tesla', '...ing SUVs and trucks'}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'brand_name': 'Tesla', '...ing SUVs and trucks'}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:20:42.212 | INFO     | __main__:run_bulk_audits:23 - Loaded 3 clients. Starting bulk processing...
+2026-02-02 17:20:42.513 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Perplexity AI
+2026-02-02 17:20:44.145 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Perplexity AI: 2 validation errors for AuditReport
+visibility_score
+  Field required [type=missing, input_value={'brand_name': 'Perplexit... reviewed by humans.'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'brand_name': 'Perplexit... reviewed by humans.'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:20:44.145 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: SpaceX
+2026-02-02 17:20:45.066 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit SpaceX: 2 validation errors for AuditReport
+visibility_score
+  Field required [type=missing, input_value={'brand_name': 'SpaceX', ...bility, but not 100%'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'brand_name': 'SpaceX', ...bility, but not 100%'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:20:45.066 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Tesla
+2026-02-02 17:20:46.148 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Tesla: 2 validation errors for AuditReport
+visibility_score
+  Field required [type=missing, input_value={'audit_target': 'Tesla',...ge of over 500 miles'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'audit_target': 'Tesla',...ge of over 500 miles'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:23:02.247 | INFO     | __main__:run_bulk_audits:23 - Loaded 3 clients. Starting bulk processing...
+2026-02-02 17:23:02.575 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Perplexity AI
+2026-02-02 17:23:03.702 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Perplexity AI: 2 validation errors for AuditReport
+visibility_score
+  Field required [type=missing, input_value={'brand_name': 'Perplexit...d rule-based systems'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'brand_name': 'Perplexit...d rule-based systems'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:23:03.702 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: SpaceX
+2026-02-02 17:23:04.726 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit SpaceX: 2 validation errors for AuditReport
+visibility_score
+  Field required [type=missing, input_value={'brand_name': 'SpaceX', ... missions to the ISS'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'brand_name': 'SpaceX', ... missions to the ISS'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:23:04.726 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Tesla
+2026-02-02 17:23:05.195 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Tesla: 2 validation errors for AuditReport
+visibility_score
+  Field required [type=missing, input_value={'brand_name': 'Tesla', '...of electric vehicles'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'brand_name': 'Tesla', '...of electric vehicles'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:23:34.860 | INFO     | __main__:run_bulk_audits:23 - Loaded 3 clients. Starting bulk processing...
+2026-02-02 17:23:35.163 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Perplexity AI
+2026-02-02 17:23:36.690 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Perplexity AI: 2 validation errors for AuditReport
+visibility_score
+  Field required [type=missing, input_value={'brand_name': 'Perplexit...es are not limitless'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'brand_name': 'Perplexit...es are not limitless'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:23:36.690 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: SpaceX
+2026-02-02 17:23:37.401 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit SpaceX: 2 validation errors for AuditReport
+visibility_score
+  Field required [type=missing, input_value={'brand_name': 'SpaceX', ...g amount: $2 billion'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'brand_name': 'SpaceX', ...g amount: $2 billion'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:23:37.401 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Tesla
+2026-02-02 17:23:38.096 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Tesla: 2 validation errors for AuditReport
+visibility_score
+  Field required [type=missing, input_value={'brand_name': 'Tesla', '...not fully autonomous'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'brand_name': 'Tesla', '...not fully autonomous'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:26:14.976 | INFO     | __main__:run_bulk_audits:23 - Loaded 3 clients. Starting bulk processing...
+2026-02-02 17:26:15.271 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Perplexity AI
+2026-02-02 17:26:16.384 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Perplexity AI...
+2026-02-02 17:26:16.384 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Perplexity_AI_Audit.pdf
+2026-02-02 17:26:16.384 | SUCCESS  | __main__:run_bulk_audits:46 - Audit exported for Perplexity AI
+2026-02-02 17:26:16.384 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: SpaceX
+2026-02-02 17:26:17.212 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for SpaceX...
+2026-02-02 17:26:17.212 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit SpaceX: A page cannot be added on a closed document, after calling output()
+2026-02-02 17:26:17.212 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Tesla
+2026-02-02 17:26:17.871 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Tesla...
+2026-02-02 17:26:17.887 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Tesla: A page cannot be added on a closed document, after calling output()
+2026-02-02 17:29:51.228 | INFO     | __main__:run_bulk_audits:24 - Loaded 3 clients. Starting bulk processing...
+2026-02-02 17:29:51.546 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Perplexity AI
+2026-02-02 17:29:53.236 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Perplexity AI...
+2026-02-02 17:29:53.241 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Perplexity_AI_Audit_20260202_1729.pdf
+2026-02-02 17:29:53.241 | SUCCESS  | __main__:run_bulk_audits:51 - Audit exported for Perplexity AI: Perplexity_AI_Audit_20260202_1729.pdf
+2026-02-02 17:29:53.241 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: SpaceX
+2026-02-02 17:29:54.025 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for SpaceX...
+2026-02-02 17:29:54.028 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\SpaceX_Audit_20260202_1729.pdf
+2026-02-02 17:29:54.028 | SUCCESS  | __main__:run_bulk_audits:51 - Audit exported for SpaceX: SpaceX_Audit_20260202_1729.pdf
+2026-02-02 17:29:54.028 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Tesla
+2026-02-02 17:29:54.816 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Tesla...
+2026-02-02 17:29:54.823 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Tesla_Audit_20260202_1729.pdf
+2026-02-02 17:29:54.823 | SUCCESS  | __main__:run_bulk_audits:51 - Audit exported for Tesla: Tesla_Audit_20260202_1729.pdf

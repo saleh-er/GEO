@@ -11,13 +11,15 @@ class GEOAuditor:
     def perform_audit(self, brand: str, niche: str) -> AuditReport:
         # Agency-grade system prompt
         system_msg = (
-            "You are a Senior GEO Analyst. Return a valid JSON object. "
-            "CRITICAL: The 'citations' and 'hallucinations' fields must be LISTS OF OBJECTS, not strings.\n\n"
-            "Structure for each citation object: {'source': str, 'sentiment': str, 'context': str}\n"
-            "Structure for each hallucination object: {'fact': str, 'correction': str}\n\n"
-            "Example 'citations' format: [{'source': 'Forbes', 'sentiment': 'Positive', 'context': '...'}]\n"
-            "Example 'hallucinations' format: [{'fact': '...', 'correction': '...'}]"
-        )
+        "You are a Senior GEO Analyst. Return ONLY a valid JSON object. "
+        "CRITICAL: You must use these exact keys:\n"
+        "- 'brand_name'\n"
+        "- 'visibility_score'\n"
+        "- 'recommendations'\n"
+        "- 'citations'\n"
+        "- 'hallucinations'\n"
+        "If you use 'score' or 'suggestions', the system will fail. Stick to the keys above."
+    )
         
         user_msg = (
             f"Audit '{brand}' in '{niche}'. "

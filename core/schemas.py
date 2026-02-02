@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, AliasChoices
 from typing import List, Optional
 
 class Citation(BaseModel):
@@ -12,11 +12,22 @@ class CompetitorMetrics(BaseModel):
     sentiment_score: float # 0.0 to 1.0
 
 class AuditReport(BaseModel):
-    brand_name: str
-    visibility_score: float = Field(ge=0, le=100)
-    citations: List[Citation]
-    recommendations: List[str]
-    # Adding this field helps with the new hallucination feature
+    brand_name: str = Field(
+        validation_alias=AliasChoices('brand_name', 'brand', 'company', 'name')
+    )
+    
+    # We add every possible name the AI might use for the score
+    visibility_score: float = Field(
+        validation_alias=AliasChoices('visibility_score', 'score', 'visibility', 'rating', 'ai_score')
+    )
+    
+    citations: List[dict] 
+    
+    # We add aliases for recommendations too
+    recommendations: List[str] = Field(
+        validation_alias=AliasChoices('recommendations', 'strategic_recommendations', 'suggestions', 'advice', 'next_steps')
+    )
+    
     hallucinations: Optional[List[dict]] = None
 
 
