@@ -35,3 +35,10 @@ class CompetitorAnalysis(BaseModel):
     market_query: str
     leaderboard: List[CompetitorMetrics]
     citation_gaps: List[str] = Field(description="Topics competitors win that we miss")
+
+    # comparison report
+class ComparisonReport(BaseModel):
+    brand_a: AuditReport
+    brand_b: AuditReport
+    market_niche: str
+    winner_summary: str  # AI's analysis of who is currently winning
