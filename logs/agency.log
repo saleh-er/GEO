@@ -333,3 +333,108 @@ recommendations
 2026-02-02 17:29:54.816 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Tesla...
 2026-02-02 17:29:54.823 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Tesla_Audit_20260202_1729.pdf
 2026-02-02 17:29:54.823 | SUCCESS  | __main__:run_bulk_audits:51 - Audit exported for Tesla: Tesla_Audit_20260202_1729.pdf
+2026-02-02 17:32:40.945 | INFO     | __main__:run_bulk_audits:21 - Loaded 3 clients. Starting engine...
+2026-02-02 17:32:41.257 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Perplexity AI
+2026-02-02 17:32:42.676 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Perplexity AI...
+2026-02-02 17:32:42.676 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Perplexity_AI_Audit_20260202_1732.pdf
+2026-02-02 17:32:42.676 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Perplexity AI
+2026-02-02 17:32:42.676 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: SpaceX
+2026-02-02 17:32:43.419 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for SpaceX...
+2026-02-02 17:32:43.430 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\SpaceX_Audit_20260202_1732.pdf
+2026-02-02 17:32:43.430 | SUCCESS  | __main__:run_bulk_audits:42 - Done: SpaceX
+2026-02-02 17:32:43.430 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Tesla
+2026-02-02 17:32:44.144 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Tesla...
+2026-02-02 17:32:44.147 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Tesla_Audit_20260202_1732.pdf
+2026-02-02 17:32:44.147 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Tesla
+2026-02-02 17:34:14.253 | INFO     | __main__:run_bulk_audits:21 - Loaded 3 clients. Starting engine...
+2026-02-02 17:34:14.597 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Perplexity AI
+2026-02-02 17:34:15.806 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Perplexity AI...
+2026-02-02 17:34:15.822 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Perplexity_AI_Audit_20260202_1734.pdf
+2026-02-02 17:34:15.822 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Perplexity AI
+2026-02-02 17:34:15.822 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: SpaceX
+2026-02-02 17:34:16.741 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for SpaceX...
+2026-02-02 17:34:16.755 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\SpaceX_Audit_20260202_1734.pdf
+2026-02-02 17:34:16.756 | SUCCESS  | __main__:run_bulk_audits:42 - Done: SpaceX
+2026-02-02 17:34:16.756 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Tesla
+2026-02-02 17:34:17.358 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Tesla...
+2026-02-02 17:34:17.374 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Tesla_Audit_20260202_1734.pdf
+2026-02-02 17:34:17.375 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Tesla
+2026-02-02 17:40:11.275 | INFO     | __main__:run_bulk_audits:21 - Loaded 20 clients. Starting engine...
+2026-02-02 17:40:11.579 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: SpaceX
+2026-02-02 17:40:12.785 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for SpaceX...
+2026-02-02 17:40:12.801 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\SpaceX_Audit_20260202_1740.pdf
+2026-02-02 17:40:12.801 | SUCCESS  | __main__:run_bulk_audits:42 - Done: SpaceX
+2026-02-02 17:40:12.801 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Tesla
+2026-02-02 17:40:13.700 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Tesla...
+2026-02-02 17:40:13.706 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Tesla_Audit_20260202_1740.pdf
+2026-02-02 17:40:13.707 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Tesla
+2026-02-02 17:40:13.707 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Apple
+2026-02-02 17:40:14.543 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Apple...
+2026-02-02 17:40:14.547 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Apple_Audit_20260202_1740.pdf
+2026-02-02 17:40:14.547 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Apple
+2026-02-02 17:40:14.547 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Nike
+2026-02-02 17:40:15.650 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Nike...
+2026-02-02 17:40:15.659 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Nike_Audit_20260202_1740.pdf
+2026-02-02 17:40:15.660 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Nike
+2026-02-02 17:40:15.660 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Samsung
+2026-02-02 17:40:16.462 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Samsung...
+2026-02-02 17:40:16.475 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Samsung_Audit_20260202_1740.pdf
+2026-02-02 17:40:16.475 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Samsung
+2026-02-02 17:40:16.475 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Amazon
+2026-02-02 17:40:17.135 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Amazon...
+2026-02-02 17:40:17.135 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Amazon_Audit_20260202_1740.pdf
+2026-02-02 17:40:17.135 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Amazon
+2026-02-02 17:40:17.135 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Google
+2026-02-02 17:40:17.882 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Google...
+2026-02-02 17:40:17.887 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Google_Audit_20260202_1740.pdf
+2026-02-02 17:40:17.888 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Google
+2026-02-02 17:40:17.888 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Microsoft
+2026-02-02 17:40:18.676 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Microsoft...
+2026-02-02 17:40:18.683 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Microsoft_Audit_20260202_1740.pdf
+2026-02-02 17:40:18.683 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Microsoft
+2026-02-02 17:40:18.684 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Coca-Cola
+2026-02-02 17:40:19.321 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Coca-Cola...
+2026-02-02 17:40:19.321 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Coca-Cola_Audit_20260202_1740.pdf
+2026-02-02 17:40:19.321 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Coca-Cola
+2026-02-02 17:40:19.321 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: McDonald's
+2026-02-02 17:40:20.064 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for McDonald's...
+2026-02-02 17:40:20.080 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\McDonald's_Audit_20260202_1740.pdf
+2026-02-02 17:40:20.080 | SUCCESS  | __main__:run_bulk_audits:42 - Done: McDonald's
+2026-02-02 17:40:20.080 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Disney
+2026-02-02 17:40:21.019 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Disney...
+2026-02-02 17:40:21.019 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Disney_Audit_20260202_1740.pdf
+2026-02-02 17:40:21.019 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Disney
+2026-02-02 17:40:21.019 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Intel
+2026-02-02 17:40:21.835 | ERROR    | __main__:run_bulk_audits:47 - Failed: Intel
+2026-02-02 17:40:21.835 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: IBM
+2026-02-02 17:40:22.940 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for IBM...
+2026-02-02 17:40:22.959 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\IBM_Audit_20260202_1740.pdf
+2026-02-02 17:40:22.959 | SUCCESS  | __main__:run_bulk_audits:42 - Done: IBM
+2026-02-02 17:40:22.959 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Facebook
+2026-02-02 17:40:23.656 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Facebook...
+2026-02-02 17:40:23.673 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Facebook_Audit_20260202_1740.pdf
+2026-02-02 17:40:23.673 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Facebook
+2026-02-02 17:40:23.673 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Netflix
+2026-02-02 17:40:24.747 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Netflix...
+2026-02-02 17:40:24.754 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Netflix_Audit_20260202_1740.pdf
+2026-02-02 17:40:24.754 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Netflix
+2026-02-02 17:40:24.754 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Uber
+2026-02-02 17:40:25.410 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Uber...
+2026-02-02 17:40:25.410 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Uber_Audit_20260202_1740.pdf
+2026-02-02 17:40:25.410 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Uber
+2026-02-02 17:40:25.410 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Airbnb
+2026-02-02 17:40:26.438 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Airbnb...
+2026-02-02 17:40:26.447 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Airbnb_Audit_20260202_1740.pdf
+2026-02-02 17:40:26.447 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Airbnb
+2026-02-02 17:40:26.447 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Salesforce
+2026-02-02 17:40:27.242 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Salesforce...
+2026-02-02 17:40:27.242 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Salesforce_Audit_20260202_1740.pdf
+2026-02-02 17:40:27.242 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Salesforce
+2026-02-02 17:40:27.257 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Adobe
+2026-02-02 17:40:27.926 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Adobe...
+2026-02-02 17:40:27.933 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Adobe_Audit_20260202_1740.pdf
+2026-02-02 17:40:27.933 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Adobe
+2026-02-02 17:40:27.933 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: CIH banque
+2026-02-02 17:40:28.986 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for CIH banque...
+2026-02-02 17:40:28.995 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\CIH_banque_Audit_20260202_1740.pdf
+2026-02-02 17:40:28.995 | SUCCESS  | __main__:run_bulk_audits:42 - Done: CIH banque

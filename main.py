@@ -6,53 +6,56 @@ from agents.auditor import GEOAuditor
 from tools.reporter import GEOReporter
 
 def run_bulk_audits():
-    """Reads clients from JSON and processes them one by one."""
-    # 1. Ensure folders (reports, data, etc.) exist
     Config.initialize_directories()
-    
-    # 2. Locate your client database
     client_file = Config.DATA_DIR / "clients.json"
     
     if not client_file.exists():
-        logger.error(f"Client file not found at {client_file}. Please create it first.")
+        logger.error(f"Client file not found.")
         return
 
-    # 3. Load the data from the JSON file
     with open(client_file, 'r') as f:
         clients = json.load(f)
 
-    logger.info(f"Loaded {len(clients)} clients. Starting bulk processing...")
+    # Agency Dashboard Tracking
+    stats = {"success": [], "failed": []}
+    logger.info(f"Loaded {len(clients)} clients. Starting engine...")
     
-    # 4. Initialize the Auditor once (it can be reused)
     auditor = GEOAuditor()
 
-    # 5. THE LOOP: Process each client automatically
     for client in clients:
         brand = client['brand_name']
         niche = client['niche']
-        
-        logger.info(f">>> Processing Audit: {brand}")
+        logger.info(f">>> Auditing: {brand}")
         
         try:
-            # AI performs the audit
             report_data = auditor.perform_audit(brand, niche)
-            
-            # --- FIX: Re-initialize the reporter for EACH client ---
-            # This prevents the 'closed document' error
             reporter = GEOReporter()
             
-            # --- PRO FEATURE: Add a timestamp to the filename ---
             timestamp = datetime.now().strftime("%Y%m%d_%H%M")
             filename = f"{brand.replace(' ', '_')}_Audit_{timestamp}.pdf"
             output_path = Config.REPORTS_DIR / filename
             
-            # Generate the PDF
             reporter.generate_report(report_data.model_dump(), str(output_path))
-            logger.success(f"Audit exported for {brand}: {filename}")
+            
+            # Record success
+            stats["success"].append(brand)
+            logger.success(f"Done: {brand}")
             
         except Exception as e:
-            # If one fails, the loop continues to the next client
-            logger.error(f"Failed to audit {brand}: {e}")
+            # Record failure
+            stats["failed"].append({"brand": brand, "error": str(e)[:50]})
+            logger.error(f"Failed: {brand}")
+
+    # --- Print Agency Dashboard Summary ---
+    print("\n" + "="*50)
+    print(f"🚀 {Config.AGENCY_NAME} BATCH SUMMARY")
+    print("="*50)
+    print(f"✅ SUCCESSFULLY AUDITED: {len(stats['success'])}")
+    for b in stats["success"]: print(f"  - {b}")
+    
+    print(f"\n❌ FAILED AUDITS: {len(stats['failed'])}")
+    for f in stats["failed"]: print(f"  - {f['brand']}: {f['error']}")
+    print("="*50 + "\n")
 
 if __name__ == "__main__":
     run_bulk_audits()
