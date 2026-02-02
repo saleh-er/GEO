@@ -438,3 +438,74 @@ recommendations
 2026-02-02 17:40:28.986 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for CIH banque...
 2026-02-02 17:40:28.995 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\CIH_banque_Audit_20260202_1740.pdf
 2026-02-02 17:40:28.995 | SUCCESS  | __main__:run_bulk_audits:42 - Done: CIH banque
+2026-02-02 17:57:44.342 | INFO     | __main__:run_bulk_audits:21 - Loaded 20 clients. Starting engine...
+2026-02-02 17:57:44.658 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: SpaceX
+2026-02-02 17:57:44.658 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: SpaceX
+2026-02-02 17:57:45.232 | ERROR    | __main__:run_bulk_audits:47 - Failed: SpaceX
+2026-02-02 17:57:45.233 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Tesla
+2026-02-02 17:57:45.233 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Tesla
+2026-02-02 17:57:45.268 | ERROR    | __main__:run_bulk_audits:47 - Failed: Tesla
+2026-02-02 17:57:45.268 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Apple
+2026-02-02 17:57:45.269 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Apple
+2026-02-02 17:57:45.298 | ERROR    | __main__:run_bulk_audits:47 - Failed: Apple
+2026-02-02 17:57:45.299 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Nike
+2026-02-02 17:57:45.299 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Nike
+2026-02-02 17:57:45.326 | ERROR    | __main__:run_bulk_audits:47 - Failed: Nike
+2026-02-02 17:57:45.326 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Samsung
+2026-02-02 17:57:45.326 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Samsung
+2026-02-02 17:57:45.354 | ERROR    | __main__:run_bulk_audits:47 - Failed: Samsung
+2026-02-02 17:57:45.354 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Amazon
+2026-02-02 17:57:45.354 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Amazon
+2026-02-02 17:57:45.382 | ERROR    | __main__:run_bulk_audits:47 - Failed: Amazon
+2026-02-02 17:57:45.382 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Google
+2026-02-02 17:57:45.382 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Google
+2026-02-02 17:57:45.409 | ERROR    | __main__:run_bulk_audits:47 - Failed: Google
+2026-02-02 17:57:45.410 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Microsoft
+2026-02-02 17:57:45.410 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Microsoft
+2026-02-02 17:57:45.426 | ERROR    | __main__:run_bulk_audits:47 - Failed: Microsoft
+2026-02-02 17:57:45.426 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Coca-Cola
+2026-02-02 17:57:45.426 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Coca-Cola
+2026-02-02 17:57:45.467 | ERROR    | __main__:run_bulk_audits:47 - Failed: Coca-Cola
+2026-02-02 17:57:45.467 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: McDonald's
+2026-02-02 17:57:45.467 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: McDonald's
+2026-02-02 17:57:45.496 | ERROR    | __main__:run_bulk_audits:47 - Failed: McDonald's
+2026-02-02 17:57:45.496 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Disney
+2026-02-02 17:57:45.496 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Disney
+2026-02-02 17:57:45.522 | ERROR    | __main__:run_bulk_audits:47 - Failed: Disney
+2026-02-02 17:57:45.528 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Intel
+2026-02-02 17:57:45.530 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Intel
+2026-02-02 17:57:45.560 | ERROR    | __main__:run_bulk_audits:47 - Failed: Intel
+2026-02-02 17:57:45.560 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: IBM
+2026-02-02 17:57:45.560 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: IBM
+2026-02-02 17:57:45.594 | ERROR    | __main__:run_bulk_audits:47 - Failed: IBM
+2026-02-02 17:57:45.594 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Facebook
+2026-02-02 17:57:45.594 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Facebook
+2026-02-02 17:57:45.626 | ERROR    | __main__:run_bulk_audits:47 - Failed: Facebook
+2026-02-02 17:57:45.626 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Netflix
+2026-02-02 17:57:45.626 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Netflix
+2026-02-02 17:57:45.657 | ERROR    | __main__:run_bulk_audits:47 - Failed: Netflix
+2026-02-02 17:57:45.657 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Uber
+2026-02-02 17:57:45.657 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Uber
+2026-02-02 17:57:45.684 | ERROR    | __main__:run_bulk_audits:47 - Failed: Uber
+2026-02-02 17:57:45.685 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Airbnb
+2026-02-02 17:57:45.685 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Airbnb
+2026-02-02 17:57:45.715 | ERROR    | __main__:run_bulk_audits:47 - Failed: Airbnb
+2026-02-02 17:57:45.715 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Salesforce
+2026-02-02 17:57:45.715 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Salesforce
+2026-02-02 17:57:45.743 | ERROR    | __main__:run_bulk_audits:47 - Failed: Salesforce
+2026-02-02 17:57:45.743 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Adobe
+2026-02-02 17:57:45.743 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Adobe
+2026-02-02 17:57:45.770 | ERROR    | __main__:run_bulk_audits:47 - Failed: Adobe
+2026-02-02 17:57:45.770 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: CIH banque
+2026-02-02 17:57:45.770 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: CIH banque
+2026-02-02 17:57:45.800 | ERROR    | __main__:run_bulk_audits:47 - Failed: CIH banque
+2026-02-02 17:58:42.653 | INFO     | __main__:run_bulk_audits:21 - Loaded 3 clients. Starting engine...
+2026-02-02 17:58:42.941 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: SpaceX
+2026-02-02 17:58:42.941 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: SpaceX
+2026-02-02 17:58:43.400 | ERROR    | __main__:run_bulk_audits:47 - Failed: SpaceX
+2026-02-02 17:58:43.400 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Adobe
+2026-02-02 17:58:43.400 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Adobe
+2026-02-02 17:58:43.452 | ERROR    | __main__:run_bulk_audits:47 - Failed: Adobe
+2026-02-02 17:58:43.453 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: CIH banque
+2026-02-02 17:58:43.453 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: CIH banque
+2026-02-02 17:58:43.487 | ERROR    | __main__:run_bulk_audits:47 - Failed: CIH banque
