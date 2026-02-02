@@ -580,3 +580,68 @@ recommendations
 2026-02-02 23:11:21.941 | INFO     | __main__:run_competitive_battle:68 - ⚔️ Starting Battle Audit for Blue Origin...
 2026-02-02 23:11:21.941 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Blue Origin
 2026-02-02 23:11:22.753 | INFO     | agents.auditor:compare_brands:46 - ⚔️ Battle Mode: SpaceX vs Blue Origin
+2026-02-02 23:18:00.849 | INFO     | __main__:<module>:95 - 🎬 STARTING ACT 1: BULK AUDITS
+2026-02-02 23:18:00.859 | INFO     | __main__:run_bulk_audits:22 - Loaded 3 clients. Starting engine...
+2026-02-02 23:18:01.271 | INFO     | __main__:run_bulk_audits:29 - >>> Auditing: SpaceX
+2026-02-02 23:18:01.271 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: SpaceX
+2026-02-02 23:18:02.773 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for SpaceX...
+2026-02-02 23:18:02.773 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\SpaceX_Audit_20260202_2318.pdf
+2026-02-02 23:18:02.773 | SUCCESS  | __main__:run_bulk_audits:42 - Done: SpaceX
+2026-02-02 23:18:02.773 | INFO     | __main__:run_bulk_audits:29 - >>> Auditing: Adobe
+2026-02-02 23:18:02.773 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Adobe
+2026-02-02 23:18:03.613 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Adobe...
+2026-02-02 23:18:03.613 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Adobe_Audit_20260202_2318.pdf
+2026-02-02 23:18:03.613 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Adobe
+2026-02-02 23:18:03.613 | INFO     | __main__:run_bulk_audits:29 - >>> Auditing: CIH banque
+2026-02-02 23:18:03.613 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: CIH banque
+2026-02-02 23:18:04.462 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for CIH banque...
+2026-02-02 23:18:04.471 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\CIH_banque_Audit_20260202_2318.pdf
+2026-02-02 23:18:04.471 | SUCCESS  | __main__:run_bulk_audits:42 - Done: CIH banque
+2026-02-02 23:18:04.474 | INFO     | __main__:<module>:100 - 🎬 STARTING ACT 2: COMPETITIVE BATTLE
+2026-02-02 23:18:04.734 | INFO     | __main__:run_competitive_battle:65 - ⚔️ Starting Battle Audit for SpaceX...
+2026-02-02 23:18:04.734 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: SpaceX
+2026-02-02 23:18:05.684 | INFO     | __main__:run_competitive_battle:68 - ⚔️ Starting Battle Audit for Blue Origin...
+2026-02-02 23:18:05.684 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Blue Origin
+2026-02-02 23:18:06.408 | INFO     | agents.auditor:compare_brands:46 - ⚔️ Battle Mode: SpaceX vs Blue Origin
+2026-02-02 23:22:46.655 | INFO     | __main__:<module>:92 - 🎬 STARTING ACT 1: BULK AUDITS
+2026-02-02 23:22:46.655 | INFO     | __main__:run_bulk_audits:22 - Loaded 3 clients. Starting engine...
+2026-02-02 23:22:46.989 | INFO     | __main__:run_bulk_audits:29 - >>> Auditing: SpaceX
+2026-02-02 23:22:46.989 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: SpaceX
+2026-02-02 23:22:48.657 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for SpaceX...
+2026-02-02 23:22:48.666 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\SpaceX_Audit_20260202_2322.pdf
+2026-02-02 23:22:48.666 | SUCCESS  | __main__:run_bulk_audits:42 - Done: SpaceX
+2026-02-02 23:22:48.666 | INFO     | __main__:run_bulk_audits:29 - >>> Auditing: Adobe
+2026-02-02 23:22:48.666 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Adobe
+2026-02-02 23:22:49.622 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Adobe...
+2026-02-02 23:22:49.622 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Adobe_Audit_20260202_2322.pdf
+2026-02-02 23:22:49.622 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Adobe
+2026-02-02 23:22:49.622 | INFO     | __main__:run_bulk_audits:29 - >>> Auditing: CIH banque
+2026-02-02 23:22:49.622 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: CIH banque
+2026-02-02 23:22:50.553 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for CIH banque...
+2026-02-02 23:22:50.553 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\CIH_banque_Audit_20260202_2322.pdf
+2026-02-02 23:22:50.553 | SUCCESS  | __main__:run_bulk_audits:42 - Done: CIH banque
+2026-02-02 23:22:50.566 | INFO     | __main__:<module>:97 - 🎬 STARTING ACT 2: COMPETITIVE BATTLE
+2026-02-02 23:22:50.826 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: SpaceX
+2026-02-02 23:22:52.047 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Blue Origin
+2026-02-02 23:22:53.299 | INFO     | agents.auditor:compare_brands:47 - ⚔️ Refining Battle Data: SpaceX vs Blue Origin
+2026-02-02 23:27:36.070 | INFO     | __main__:<module>:92 - 🎬 STARTING ACT 1: BULK AUDITS
+2026-02-02 23:27:36.071 | INFO     | __main__:run_bulk_audits:22 - Loaded 3 clients. Starting engine...
+2026-02-02 23:27:36.431 | INFO     | __main__:run_bulk_audits:29 - >>> Auditing: SpaceX
+2026-02-02 23:27:36.432 | INFO     | agents.auditor:perform_audit:17 - 🔍 Analyzing Brand: SpaceX
+2026-02-02 23:27:37.578 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for SpaceX...
+2026-02-02 23:27:37.587 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\SpaceX_Audit_20260202_2327.pdf
+2026-02-02 23:27:37.587 | SUCCESS  | __main__:run_bulk_audits:42 - Done: SpaceX
+2026-02-02 23:27:37.587 | INFO     | __main__:run_bulk_audits:29 - >>> Auditing: Adobe
+2026-02-02 23:27:37.587 | INFO     | agents.auditor:perform_audit:17 - 🔍 Analyzing Brand: Adobe
+2026-02-02 23:27:38.453 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Adobe...
+2026-02-02 23:27:38.453 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Adobe_Audit_20260202_2327.pdf
+2026-02-02 23:27:38.453 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Adobe
+2026-02-02 23:27:38.453 | INFO     | __main__:run_bulk_audits:29 - >>> Auditing: CIH banque
+2026-02-02 23:27:38.461 | INFO     | agents.auditor:perform_audit:17 - 🔍 Analyzing Brand: CIH banque
+2026-02-02 23:27:39.276 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for CIH banque...
+2026-02-02 23:27:39.276 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\CIH_banque_Audit_20260202_2327.pdf
+2026-02-02 23:27:39.276 | SUCCESS  | __main__:run_bulk_audits:42 - Done: CIH banque
+2026-02-02 23:27:39.289 | INFO     | __main__:<module>:97 - 🎬 STARTING ACT 2: COMPETITIVE BATTLE
+2026-02-02 23:27:39.544 | INFO     | agents.auditor:perform_audit:17 - 🔍 Analyzing Brand: SpaceX
+2026-02-02 23:27:40.892 | INFO     | agents.auditor:perform_audit:17 - 🔍 Analyzing Brand: Blue Origin
+2026-02-02 23:27:41.648 | INFO     | agents.auditor:compare_brands:48 - ⚔️ Refining Battle Data: SpaceX vs Blue Origin

@@ -62,14 +62,11 @@ def run_competitive_battle(brand_a, brand_b, niche):
     auditor = GEOAuditor()
     
     # 1. Audit both brands
-    logger.info(f"⚔️ Starting Battle Audit for {brand_a}...")
     report_a = auditor.perform_audit(brand_a, niche)
-    
-    logger.info(f"⚔️ Starting Battle Audit for {brand_b}...")
     report_b = auditor.perform_audit(brand_b, niche)
     
     # 2. Get the Competitive Analysis from AI
-    battle_logic = auditor.compare_brands(brand_a, brand_b, niche)
+    battle_logic = auditor.compare_brands(report_a, report_b, niche)
     
     # 3. Generate the Dashboard
     reporter = GEOReporter()

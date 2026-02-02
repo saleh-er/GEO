@@ -1,4 +1,5 @@
 import os
+import json
 from openai import OpenAI
 from loguru import logger
 from core.schemas import AuditReport, ComparisonReport # Ensure ComparisonReport is in your schemas
@@ -42,13 +43,25 @@ class GEOAuditor:
         raw_content = response.choices[0].message.content
         return AuditReport.model_validate_json(raw_content)
     
-    def compare_brands(self, brand_1: str, brand_2: str, niche: str) -> ComparisonReport:
-        logger.info(f"⚔️ Battle Mode: {brand_1} vs {brand_2}")
+    def compare_brands(self, report_a: AuditReport, report_b: AuditReport, niche: str) -> ComparisonReport:
+        """Pits two PRE-AUDITED reports against each other."""
+        logger.info(f"⚔️ Refining Battle Data: {report_a.brand_name} vs {report_b.brand_name}")
         
-        system_msg = "You are a Competitive Intelligence Agent. Return valid JSON comparing Brand A and B."
-        user_msg = f"Compare {brand_1} vs {brand_2} in {niche}."
+        # We give the AI the exact data it needs so it doesn't hallucinate strings
+        system_msg = (
+            "You are a Competitive Intelligence Agent. Compare the two provided brand audits. "
+            "Identify the winner and explain why in 3-4 sentences. "
+            "Return ONLY a JSON object with the key 'winner_summary'."
+        )
+        
+        user_msg = f"""
+        DATA A: {report_a.model_dump_json()}
+        DATA B: {report_b.model_dump_json()}
+        NICHE: {niche}
+        
+        Return a ComparisonReport JSON with 'brand_a', 'brand_b', 'market_niche', and 'winner_summary'.
+        """
 
-        # FIX: Also update the comparison method
         response = self.client.chat.completions.create(
             model="llama-3.3-70b-versatile",
             messages=[
@@ -58,9 +71,17 @@ class GEOAuditor:
             response_format={"type": "json_object"}
         )
         
-        return ComparisonReport.model_validate_json(response.choices[0].message.content)
+# Parse only the summary from the AI
+        ai_data = json.loads(response.choices[0].message.content)
+        summary = ai_data.get("winner_summary", "Comparison complete.")
 
-
+        # MANUALLY build the report - This cannot fail validation!
+        return ComparisonReport(
+            brand_a=report_a,
+            brand_b=report_b,
+            market_niche=niche,
+            winner_summary=summary
+        )
     def detect_hallucinations(self, ai_response: str, ground_truth_docs: str):
         """Compares AI claims against the client's verified data."""
         logger.info("🛡️ Running Hallucination Verification...")
