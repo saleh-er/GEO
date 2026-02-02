@@ -8,3 +8,173 @@
 2026-02-02 16:28:15.310 | INFO     | __main__:run_test_audit:11 - Executing Test Audit with mock data...
 2026-02-02 16:28:15.310 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for TechFlow Solutions...
 2026-02-02 16:28:15.326 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\TechFlow_Test_Report.pdf
+2026-02-02 17:00:51.390 | INFO     | __main__:run_bulk_audits:23 - Loaded 3 clients. Starting bulk processing...
+2026-02-02 17:00:51.861 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Perplexity AI
+2026-02-02 17:00:52.745 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Perplexity AI: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-****************HERE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-02-02 17:00:52.745 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: SpaceX
+2026-02-02 17:00:52.898 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit SpaceX: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-****************HERE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-02-02 17:00:52.898 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Tesla
+2026-02-02 17:00:53.046 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Tesla: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-****************HERE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-02-02 17:11:40.504 | INFO     | __main__:run_bulk_audits:23 - Loaded 3 clients. Starting bulk processing...
+2026-02-02 17:11:40.856 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Perplexity AI
+2026-02-02 17:11:41.342 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Perplexity AI: Error code: 400 - {'error': {'message': "'messages' must contain the word 'json' in some form, to use 'response_format' of type 'json_object'.", 'type': 'invalid_request_error'}}
+2026-02-02 17:11:41.342 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: SpaceX
+2026-02-02 17:11:41.377 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit SpaceX: Error code: 400 - {'error': {'message': "'messages' must contain the word 'json' in some form, to use 'response_format' of type 'json_object'.", 'type': 'invalid_request_error'}}
+2026-02-02 17:11:41.380 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Tesla
+2026-02-02 17:11:41.409 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Tesla: Error code: 400 - {'error': {'message': "'messages' must contain the word 'json' in some form, to use 'response_format' of type 'json_object'.", 'type': 'invalid_request_error'}}
+2026-02-02 17:14:35.184 | INFO     | __main__:run_bulk_audits:23 - Loaded 3 clients. Starting bulk processing...
+2026-02-02 17:14:35.498 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Perplexity AI
+2026-02-02 17:14:36.695 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Perplexity AI: 6 validation errors for AuditReport
+citations.0
+  Input should be an object [type=model_type, input_value='Featured in TechCrunch f...ve AI search technology', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+citations.1
+  Input should be an object [type=model_type, input_value='Mentioned in Forbes as a...h engine for businesses', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+citations.2
+  Input should be an object [type=model_type, input_value='Cited in a research pape...d information retrieval', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+hallucinations.0
+  Input should be an object [type=dict_type, input_value='Incorrectly listed as a ...n a reputable tech blog', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+hallucinations.1
+  Input should be an object [type=dict_type, input_value='Misattributed as the dev...peting AI search engine', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+hallucinations.2
+  Input should be an object [type=dict_type, input_value='Erroneously reported as ... large tech corporation', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+2026-02-02 17:14:36.696 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: SpaceX
+2026-02-02 17:14:37.488 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit SpaceX: 6 validation errors for AuditReport
+citations.0
+  Input should be an object [type=model_type, input_value='Featured in Forbes as a ... aerospace manufacturer', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+citations.1
+  Input should be an object [type=model_type, input_value='Mentioned in a NASA pres...link satellite launches', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+citations.2
+  Input should be an object [type=model_type, input_value='Cited by CNBC for pionee...sable rocket technology', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+hallucinations.0
+  Input should be an object [type=dict_type, input_value='False claims of SpaceX b...by a foreign government', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+hallucinations.1
+  Input should be an object [type=dict_type, input_value="Misinformation about the...gram being discontinued", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+hallucinations.2
+  Input should be an object [type=dict_type, input_value='Rumors of Elon Musk step...ithout credible sources', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+2026-02-02 17:14:37.488 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Tesla
+2026-02-02 17:14:38.284 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Tesla: 6 validation errors for AuditReport
+citations.0
+  Input should be an object [type=model_type, input_value=" CNBC: 'Tesla leads the electric vehicle market'", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+citations.1
+  Input should be an object [type=model_type, input_value="Bloomberg: 'Tesla's mark...share in the EV sector'", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+citations.2
+  Input should be an object [type=model_type, input_value="Forbes: 'Tesla's innovat... to sustainable energy'", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+hallucinations.0
+  Input should be an object [type=dict_type, input_value="False claims of Tesla's ... to power entire cities", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+hallucinations.1
+  Input should be an object [type=dict_type, input_value="Misinformation about Tes...being fully operational", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+hallucinations.2
+  Input should be an object [type=dict_type, input_value="Rumors of Tesla's planne... the aerospace industry", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+2026-02-02 17:14:55.621 | INFO     | __main__:run_bulk_audits:23 - Loaded 3 clients. Starting bulk processing...
+2026-02-02 17:14:55.984 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Perplexity AI
+2026-02-02 17:14:57.154 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Perplexity AI: 6 validation errors for AuditReport
+citations.0
+  Input should be an object [type=model_type, input_value='Featured in TechCrunch f...e approach to AI search', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+citations.1
+  Input should be an object [type=model_type, input_value='Mentioned in Forbes as a...AI search engine market', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+citations.2
+  Input should be an object [type=model_type, input_value='Cited in a research pape...or its unique algorithm', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+hallucinations.0
+  Input should be an object [type=dict_type, input_value='Incorrectly listed as a ...non-existent conference', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+hallucinations.1
+  Input should be an object [type=dict_type, input_value='Falsely claimed to have ... prominent tech company', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+hallucinations.2
+  Input should be an object [type=dict_type, input_value='Misattributed as the dev...of a competing AI model', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+2026-02-02 17:14:57.154 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: SpaceX
+2026-02-02 17:14:58.188 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit SpaceX: 6 validation errors for AuditReport
+citations.0
+  Input should be an object [type=model_type, input_value='Featured in Forbes as a ... aerospace manufacturer', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+citations.1
+  Input should be an object [type=model_type, input_value='Cited by NASA for succes...rnational Space Station', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+citations.2
+  Input should be an object [type=model_type, input_value='Mentioned in a report by...llite internet industry', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+hallucinations.0
+  Input should be an object [type=dict_type, input_value='Incorrectly attributed t...drones for military use', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+hallucinations.1
+  Input should be an object [type=dict_type, input_value='Falsely reported to be c...on a lunar base project', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+hallucinations.2
+  Input should be an object [type=dict_type, input_value='Misstated as having laun...ific foreign government', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+2026-02-02 17:14:58.195 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Tesla
+2026-02-02 17:14:59.027 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Tesla: 6 validation errors for AuditReport
+citations.0
+  Input should be an object [type=model_type, input_value='Statista: Tesla is the l... manufacturer worldwide', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+citations.1
+  Input should be an object [type=model_type, input_value='Forbes: Tesla dominates ...electric vehicle market', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+citations.2
+  Input should be an object [type=model_type, input_value="Bloomberg: Tesla's brand...ed at over $200 billion", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type
+hallucinations.0
+  Input should be an object [type=dict_type, input_value="Claims of Tesla's AI tec...sing human intelligence", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+hallucinations.1
+  Input should be an object [type=dict_type, input_value="Rumors of Tesla's plans ...ease a flying car model", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+hallucinations.2
+  Input should be an object [type=dict_type, input_value="Speculations about Tesla...lf-sustaining ecosystem", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/dict_type
+2026-02-02 17:16:31.770 | INFO     | __main__:run_bulk_audits:23 - Loaded 3 clients. Starting bulk processing...
+2026-02-02 17:16:32.110 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Perplexity AI
+2026-02-02 17:16:33.567 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Perplexity AI: 3 validation errors for AuditReport
+brand_name
+  Field required [type=missing, input_value={'name': 'Perplexity AI',...e and web platforms.'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+visibility_score
+  Field required [type=missing, input_value={'name': 'Perplexity AI',...e and web platforms.'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'name': 'Perplexity AI',...e and web platforms.'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:16:33.567 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: SpaceX
+2026-02-02 17:16:34.284 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit SpaceX: 3 validation errors for AuditReport
+brand_name
+  Field required [type=missing, input_value={'company': 'SpaceX', 'in...rne, California, USA'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+visibility_score
+  Field required [type=missing, input_value={'company': 'SpaceX', 'in...rne, California, USA'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'company': 'SpaceX', 'in...rne, California, USA'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-02 17:16:34.284 | INFO     | __main__:run_bulk_audits:34 - >>> Processing Audit: Tesla
+2026-02-02 17:16:34.857 | ERROR    | __main__:run_bulk_audits:49 - Failed to audit Tesla: 3 validation errors for AuditReport
+brand_name
+  Field required [type=missing, input_value={'company': 'Tesla', 'ind...ding SUVs and trucks'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+visibility_score
+  Field required [type=missing, input_value={'company': 'Tesla', 'ind...ding SUVs and trucks'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+recommendations
+  Field required [type=missing, input_value={'company': 'Tesla', 'ind...ding SUVs and trucks'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing

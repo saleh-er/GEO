@@ -1,98 +1,52 @@
-import sys
+import json
 from loguru import logger
-
-# Internal Imports
 from core.config import Config
 from agents.auditor import GEOAuditor
-from agents.researcher import CompetitorAgent
 from tools.reporter import GEOReporter
 
-def run_test_audit():
-    """Validates the PDF generation engine with dummy data."""
-    logger.info("Running system diagnostic: Generating Test Report...")
+def run_bulk_audits():
+    """Reads clients from JSON and processes them one by one."""
+    # 1. Ensure folders (reports, data, etc.) exist
+    Config.initialize_directories()
     
-    test_data = {
-        "brand_name": "Test-Agent-Alpha",
-        "visibility_score": 42,
-        "recommendations": [
-            "Diagnostic: Ensure API keys are active.",
-            "Diagnostic: Verify reports/ folder permissions.",
-            "Diagnostic: Check font rendering in PDF."
-        ],
-        "leaderboard": [
-            {"brand_name": "Test-Agent-Alpha", "citation_count": 5, "sentiment_score": 0.5},
-            {"brand_name": "Benchmark-Beta", "citation_count": 10, "sentiment_score": 0.9}
-        ],
-        "hallucinations": [
-            {"fact": "System is offline.", "correction": "System is fully operational."}
-        ]
-    }
+    # 2. Locate your client database
+    client_file = Config.DATA_DIR / "clients.json"
+    
+    if not client_file.exists():
+        logger.error(f"Client file not found at {client_file}. Please create it first.")
+        return
 
+    # 3. Load the data from the JSON file
+    with open(client_file, 'r') as f:
+        clients = json.load(f)
+
+    logger.info(f"Loaded {len(clients)} clients. Starting bulk processing...")
+    
+    # 4. Initialize your agency tools once to save memory
+    auditor = GEOAuditor()
     reporter = GEOReporter()
-    filename = Config.REPORTS_DIR / "System_Diagnostic_Report.pdf"
-    reporter.generate_report(test_data, str(filename))
-    logger.success(f"Diagnostic Complete: {filename}")
 
-def run_live_audit(brand: str, niche: str):
-    """The bread and butter of the agency: Real-time AI Visibility Audit."""
-    logger.info(f"Initializing Live GEO Audit for: {brand} ({niche})")
-    
-    try:
-        # 1. AI Analysis
-        auditor = GEOAuditor()
-        report_data = auditor.perform_audit(brand, niche)
+    # 5. THE LOOP: Process each client automatically
+    for client in clients:
+        brand = client['brand_name']
+        niche = client['niche']
         
-        # 2. PDF Production
-        reporter = GEOReporter()
-        filename = f"{brand.replace(' ', '_')}_GEO_Audit.pdf"
-        output_path = Config.REPORTS_DIR / filename
+        logger.info(f">>> Processing Audit: {brand}")
         
-        # Use model_dump() to convert Pydantic to a Dictionary for the Reporter
-        reporter.generate_report(report_data.model_dump(), str(output_path))
-        
-        logger.success(f"Audit finalized and exported to: {output_path}")
-        
-    except Exception as e:
-        logger.critical(f"Audit Engine Failure: {str(e)}")
-
-def run_competitive_sprint(brand: str, competitors: list, niche: str):
-    """Deep analysis of market share and citation gaps."""
-    logger.info(f"Starting Competitive Sprint: {brand} vs {competitors}")
-    
-    try:
-        researcher = CompetitorAgent()
-        # This calls the Perplexity Search + OpenAI Analysis
-        comparison_results = researcher.compare_brands(brand, competitors, niche)
-        
-        # Log results to console (In a later version, we'll pipe this to the PDF)
-        logger.warning(f"Market Intelligence Gathered: {comparison_results}")
-        
-    except Exception as e:
-        logger.error(f"Competitive Analysis failed: {e}")
+        try:
+            # AI performs the audit
+            report_data = auditor.perform_audit(brand, niche)
+            
+            # Create a unique filename for this client
+            filename = f"{brand.replace(' ', '_')}_Audit.pdf"
+            output_path = Config.REPORTS_DIR / filename
+            
+            # Generate the PDF
+            reporter.generate_report(report_data.model_dump(), str(output_path))
+            logger.success(f"Audit exported for {brand}")
+            
+        except Exception as e:
+            logger.error(f"Failed to audit {brand}: {e}")
 
 if __name__ == "__main__":
-    # --- 1. System Initialization ---
-    Config.initialize_directories()
-    logger.info(f"--- {Config.AGENCY_NAME} v1.0 Operational ---")
-
-    # --- 2. Configuration Switch ---
-    # Change 'MODE' to switch between services
-    MODE = "LIVE" 
-
-    if MODE == "TEST":
-        run_test_audit()
-        
-    elif MODE == "LIVE":
-        # Example Client
-        run_live_audit(brand="Perplexity AI", niche="Conversational Search Engines")
-        
-    elif MODE == "COMPETE":
-        # Example Sprint
-        run_competitive_sprint(
-            brand="OpenAI", 
-            competitors=["Anthropic", "Google DeepMind", "Meta AI"], 
-            niche="Large Language Models"
-        )
-    
-    else:
-        logger.error("Invalid MODE selected. Choose 'TEST', 'LIVE', or 'COMPETE'.")
+    run_bulk_audits()

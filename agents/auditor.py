@@ -4,19 +4,31 @@ from core.schemas import AuditReport
 
 class GEOAuditor:
     def __init__(self):
-        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
+      self.client = OpenAI(
+            base_url="https://api.groq.com/openai/v1", 
+            api_key=os.getenv("GROQ_API_KEY")
+               )
     def perform_audit(self, brand: str, niche: str) -> AuditReport:
         # Agency-grade system prompt
-        system_msg = "You are a GEO Visibility Expert. Analyze brands in JSON format."
-        user_msg = f"Audit '{brand}' in the '{niche}' niche. Provide visibility score and citations."
+        system_msg = (
+            "You are a Senior GEO Analyst. Return a valid JSON object. "
+            "CRITICAL: The 'citations' and 'hallucinations' fields must be LISTS OF OBJECTS, not strings.\n\n"
+            "Structure for each citation object: {'source': str, 'sentiment': str, 'context': str}\n"
+            "Structure for each hallucination object: {'fact': str, 'correction': str}\n\n"
+            "Example 'citations' format: [{'source': 'Forbes', 'sentiment': 'Positive', 'context': '...'}]\n"
+            "Example 'hallucinations' format: [{'fact': '...', 'correction': '...'}]"
+        )
+        
+        user_msg = (
+            f"Audit '{brand}' in '{niche}'. "
+            "Ensure 'citations' is a list of 3 objects with source/sentiment/context keys. "
+            "Ensure 'hallucinations' is a list of objects with fact/correction keys. "
+            "Return ONLY JSON."
+        )
 
         response = self.client.chat.completions.create(
-            model="gpt-4o",
-            messages=[
-                {"role": "system", "content": system_msg},
-                {"role": "user", "content": user_msg}
-            ],
+            model="llama-3.3-70b-versatile",
+            messages=[{"role": "system", "content": system_msg}, {"role": "user", "content": user_msg}],
             response_format={"type": "json_object"}
         )
         return AuditReport.model_validate_json(response.choices[0].message.content)
