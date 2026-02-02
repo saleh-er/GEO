@@ -117,3 +117,49 @@ class GEOReporter(FPDF):
             self.set_font("Helvetica", "I", 10)
             self.cell(0, 8, f"  Correction Needed: {error['correction']}", 0, 1)
             self.ln(9) # Spacing between boxes
+            
+            #geneerate_battle_report
+    def generate_battle_report(self, brand_a_data: dict, brand_b_data: dict, winner_summary: str, output_path: str):
+        self.add_page()
+        self.set_font("Helvetica", "B", 22)
+        self.set_text_color(40, 40, 40)
+        
+        # Header
+        self.cell(0, 20, f"GEO BATTLE: {brand_a_data['brand_name']} vs {brand_b_data['brand_name']}", 0, 1, "C")
+        self.ln(5)
+
+        # Winner Summary Box
+        self.set_fill_color(240, 245, 255)
+        self.set_font("Helvetica", "B", 12)
+        self.cell(0, 10, "MARKET AUTHORITY SUMMARY", 1, 1, "L", fill=True)
+        self.set_font("Helvetica", "", 10)
+        self.multi_cell(0, 8, winner_summary, 1, "L", fill=False)
+        self.ln(10)
+
+        # Comparison Table
+        with self.table(line_height=10, text_align="CENTER", width=190) as table:
+            # Header Row
+            header = table.row()
+            header.cell("METRIC", style={"font_style": "B", "fill_color": (230, 230, 230)})
+            header.cell(brand_a_data['brand_name'], style={"font_style": "B", "fill_color": (230, 230, 230)})
+            header.cell(brand_b_data['brand_name'], style={"font_style": "B", "fill_color": (230, 230, 230)})
+
+            # Visibility Score Row
+            row = table.row()
+            row.cell("AI Visibility Score")
+            row.cell(f"{brand_a_data['visibility_score']}%")
+            row.cell(f"{brand_b_data['visibility_score']}%")
+
+            # Citations Row
+            row = table.row()
+            row.cell("Verified Citations")
+            row.cell(str(len(brand_a_data['citations'])))
+            row.cell(str(len(brand_b_data['citations'])))
+            
+            # Risk/Hallucinations Row
+            row = table.row()
+            row.cell("AI Brand Risks")
+            row.cell(str(len(brand_a_data.get('hallucinations', []))))
+            row.cell(str(len(brand_b_data.get('hallucinations', []))))
+
+        self.output(output_path)

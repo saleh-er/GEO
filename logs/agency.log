@@ -525,3 +525,35 @@ recommendations
 2026-02-02 18:07:38.582 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for CIH banque...
 2026-02-02 18:07:38.582 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\CIH_banque_Audit_20260202_1807.pdf
 2026-02-02 18:07:38.582 | SUCCESS  | __main__:run_bulk_audits:42 - Done: CIH banque
+2026-02-02 22:51:27.328 | INFO     | __main__:run_bulk_audits:21 - Loaded 3 clients. Starting engine...
+2026-02-02 22:51:27.918 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: SpaceX
+2026-02-02 22:51:27.918 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: SpaceX
+2026-02-02 22:51:29.363 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for SpaceX...
+2026-02-02 22:51:29.374 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\SpaceX_Audit_20260202_2251.pdf
+2026-02-02 22:51:29.375 | SUCCESS  | __main__:run_bulk_audits:42 - Done: SpaceX
+2026-02-02 22:51:29.375 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Adobe
+2026-02-02 22:51:29.375 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Adobe
+2026-02-02 22:51:30.377 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Adobe...
+2026-02-02 22:51:30.383 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Adobe_Audit_20260202_2251.pdf
+2026-02-02 22:51:30.383 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Adobe
+2026-02-02 22:51:30.384 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: CIH banque
+2026-02-02 22:51:30.384 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: CIH banque
+2026-02-02 22:51:31.639 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for CIH banque...
+2026-02-02 22:51:31.639 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\CIH_banque_Audit_20260202_2251.pdf
+2026-02-02 22:51:31.639 | SUCCESS  | __main__:run_bulk_audits:42 - Done: CIH banque
+2026-02-02 22:56:49.442 | INFO     | __main__:run_bulk_audits:21 - Loaded 3 clients. Starting engine...
+2026-02-02 22:56:49.734 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: SpaceX
+2026-02-02 22:56:49.734 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: SpaceX
+2026-02-02 22:56:50.983 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for SpaceX...
+2026-02-02 22:56:50.999 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\SpaceX_Audit_20260202_2256.pdf
+2026-02-02 22:56:50.999 | SUCCESS  | __main__:run_bulk_audits:42 - Done: SpaceX
+2026-02-02 22:56:50.999 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: Adobe
+2026-02-02 22:56:50.999 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: Adobe
+2026-02-02 22:56:52.282 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for Adobe...
+2026-02-02 22:56:52.282 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\Adobe_Audit_20260202_2256.pdf
+2026-02-02 22:56:52.290 | SUCCESS  | __main__:run_bulk_audits:42 - Done: Adobe
+2026-02-02 22:56:52.290 | INFO     | __main__:run_bulk_audits:28 - >>> Auditing: CIH banque
+2026-02-02 22:56:52.290 | INFO     | agents.auditor:perform_audit:16 - 🔍 Analyzing Brand: CIH banque
+2026-02-02 22:56:53.043 | INFO     | tools.reporter:generate_report:22 - Generating PDF report for CIH banque...
+2026-02-02 22:56:53.043 | SUCCESS  | tools.reporter:generate_report:65 - Report saved as C:\Users\otman\Documents\GEO_Agency\reports\CIH_banque_Audit_20260202_2256.pdf
+2026-02-02 22:56:53.043 | SUCCESS  | __main__:run_bulk_audits:42 - Done: CIH banque

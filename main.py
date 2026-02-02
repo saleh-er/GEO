@@ -59,3 +59,25 @@ def run_bulk_audits():
 
 if __name__ == "__main__":
     run_bulk_audits()
+
+def run_competitive_battle(brand_a, brand_b, niche):
+    auditor = GEOAuditor()
+    
+    # 1. Audit both brands
+    report_a = auditor.perform_audit(brand_a, niche)
+    report_b = auditor.perform_audit(brand_b, niche)
+    
+    # 2. Get the "Winner Summary" from AI
+    battle_logic = auditor.compare_brands(brand_a, brand_b, niche)
+    
+    # 3. Generate the Dashboard
+    reporter = GEOReporter()
+    filename = f"Battle_{brand_a}_vs_{brand_b}.pdf"
+    output_path = Config.REPORTS_DIR / filename
+    reporter.generate_battle_report(
+        report_a.model_dump(), 
+        report_b.model_dump(), 
+        battle_logic.winner_summary, 
+        str(output_path)
+    )
+    logger.success(f"⚔️ Battle Report Generated: {output_path}")
