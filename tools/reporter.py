@@ -45,12 +45,13 @@ class GEOReporter(FPDF):
         self.set_text_color(0, 0, 0)
         
         # Recommendations Section
+        self.ln(5)
         self.set_font("Helvetica", "B", 14)
         self.cell(0, 10, "Strategic Recommendations:", 0, 1, "L")
-        self.set_font("Helvetica", "", 11)
+        self.set_font("Helvetica", "", 12)
         for rec in data.get('recommendations', []):
-            self.multi_cell(0, 8, f"- {rec}")
-        
+            self.multi_cell(0, 8, f"- {rec}", border=0, align="L")
+            self.ln(2)
         # --- PAGE 2: COMPETITIVE LANDSCAPE ---
         if 'leaderboard' in data and data['leaderboard']:
             self.add_competitor_page(data['leaderboard'])
