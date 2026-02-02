@@ -29,15 +29,37 @@ class GEOAuditor:
         )
 
         # Using modern 'parse' to force Pydantic compliance
-        response = self.client.beta.chat.completions.parse(
+        response = self.client.chat.completions.create(
             model="llama-3.3-70b-versatile",
             messages=[
                 {"role": "system", "content": system_msg},
                 {"role": "user", "content": user_msg}
             ],
-            response_format=AuditReport
+            #use standard json mode 
+            response_format={"type": "json_object"}
         )
-        return response.choices[0].message.parsed
+        # FIX: Manually validate the response content
+        raw_content = response.choices[0].message.content
+        return AuditReport.model_validate_json(raw_content)
+    
+    def compare_brands(self, brand_1: str, brand_2: str, niche: str) -> ComparisonReport:
+        logger.info(f"⚔️ Battle Mode: {brand_1} vs {brand_2}")
+        
+        system_msg = "You are a Competitive Intelligence Agent. Return valid JSON comparing Brand A and B."
+        user_msg = f"Compare {brand_1} vs {brand_2} in {niche}."
+
+        # FIX: Also update the comparison method
+        response = self.client.chat.completions.create(
+            model="llama-3.3-70b-versatile",
+            messages=[
+                {"role": "system", "content": system_msg},
+                {"role": "user", "content": user_msg}
+            ],
+            response_format={"type": "json_object"}
+        )
+        
+        return ComparisonReport.model_validate_json(response.choices[0].message.content)
+
 
     def detect_hallucinations(self, ai_response: str, ground_truth_docs: str):
         """Compares AI claims against the client's verified data."""
@@ -60,24 +82,5 @@ class GEOAuditor:
         )
         return response.choices[0].message.content
 
-    def compare_brands(self, brand_1: str, brand_2: str, niche: str) -> ComparisonReport:
-        """Pits two brands against each other for a Battle Report."""
-        logger.info(f"⚔️ Battle Mode: {brand_1} vs {brand_2}")
-        
-        system_msg = (
-            "You are a Competitive Intelligence Agent. "
-            "Compare Brand A and Brand B for GEO visibility. "
-            "Identify who has the higher 'AI Authority' and where the citation gaps are."
-        )
-        
-        user_msg = f"Compare {brand_1} and {brand_2} in the {niche} industry. Who is cited more accurately?"
-        
-        response = self.client.beta.chat.completions.parse(
-            model="llama-3.3-70b-versatile",
-            messages=[
-                {"role": "system", "content": system_msg},
-                {"role": "user", "content": user_msg}
-            ],
-            response_format=ComparisonReport
-        )
+  
         return response.choices[0].message.parsed
