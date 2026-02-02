@@ -1,5 +1,7 @@
+import os
+from typing import List
 from tools.search import PerplexitySearch
-from core.schemas import CompetitorAnalysis
+from core.schemas import CompetitorAnalysis, CompetitorMetrics
 from openai import OpenAI
 import os
 
